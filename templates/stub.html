@@ -6,14 +6,26 @@
 
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
-    <!- Try building a new body here, bootstrap is a wise choice ->
-    <div class="px-5 py-5 mx-auto">
-        <h1 class="text-primary"><strong>About Me</strong></h1>
-        <p class="text-secondary">Evan Aparri</p>
-        <p class="text-secondary">Hello World</p>
+    <!-- Start of body content specific to page -->
+    <div class="px-5 py-5 mx-auto" style="height: 1000px;">
+        <h1 class="text-white"><strong>About Evan</strong></h1>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">What I Like</h5>
+                    <p class="card-text">
+                        <ol>
+                            <li>I like to sleep</li>
+                            <li>I like to eat</li>
+                        </ol>
+                    </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </div>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
-{% block background %}
-{% endblock %}
