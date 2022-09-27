@@ -6,17 +6,34 @@
     <div class="px-5 py-5 mx-auto">
         <h1 class="text-white"><strong>Home Page</strong></h1>
         <div class="row">
-            <div class="col-6">
+            <div class="col-4">
                 <div class="card">
                     <img class="card-img-top" src="{{ url_for('static', filename='assets/IMG-8220.jpg') }}" alt="Cross Country Running">
                     <div class="card-body">
                     <h5 class="card-title">Cross Country</h5>
                     <p class="card-text">Cross Country has been something I have been doing since middle school</p>
-                    <a href={{ url_for('stub') }} class="btn btn-primary">Learn More</a>
+                    <a href={{ url_for('about') }} class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top" src="{{ url_for('static', filename='assets/scrum_crop.png') }}" alt="Scrum Methodology Infographic">
+                    <div class="card-body">
+                    <h5 class="card-title">Scrum Project</h5>
+                    <p class="card-text">
+                        Learn:
+                        <ol>
+                            <li>Who are our members?</li>
+                            <li>What project we are planning</li>
+                            <li>Project Purpose</li>
+                        </ol>
+                    </p>
+                    <a href={{ url_for('scrum') }} class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
                 <div class="card">
                     <img class="card-img-top" src="{{ url_for('static', filename='assets/adobo1.jpeg') }}" alt="Chicken Adobo">
                     <div class="card-body">
@@ -30,7 +47,7 @@
                         </ol>
                         While those are my favorite foods, I also love to eat various other foods.
                     </p>
-                    <a href={{ url_for('stub') }} class="btn btn-primary">Learn More</a>
+                    <a href={{ url_for('about') }} class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
