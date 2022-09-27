@@ -1,64 +1,67 @@
+<!-- Extending the predefined project layout -->
 {% extends "layouts/base.html" %}
 
 <!- This variable sets name of browser tab  -->
-{% set project = "About Us" %}
+{% set project = "About Me" %}
 
+<!- This is a replacement block for Body in base.html -->
 {% block body %}
-    <!-- Start of body content specific to page -->
+    <!--Try building a new body here, bootstrap is a wise choice-->
     <div class="px-5 py-5 mx-auto">
-        <h1 class="text-white"><strong>About Us</strong></h1>
-        <div class="row">
-            <div class="col-4">
+        <h1 class="text-white"><strong>Who am I?</strong></h1>
+        <div class="column">
+            <div class="column">
                 <div class="card">
                     <div class="card-body">
-                    <h5 class="card-title">About Evan</h5>
-                    <p class="card-text">
-                        <ol>
-                            <li>I like to sleep</li>
-                        </ol>
-                    </p>
+                    <h5 class="card-title"> 
+                        <p style= color:blue>About Evan</p>
+                    </h5>
+                    <p class="card-text" style= color:darkcyan>I am currently a junior at Del Norte High School and I am currently in Computer Science Principles. I am super excited to see how I will progress this year!</p>
                     </div>
+                    <img src="{{ url_for('static', filename='assets/dnhs.jpg') }}" alt="DNHS Campus" width="600" height="300">
                 </div>
             </div>
-            <div class="col-4">
+            
+        </div>
+        <br>
+        <div class="column">
+            <div class="column">
                 <div class="card">
                     <div class="card-body">
-                    <h5 class="card-title">About Alex</h5>
-                    <p class="card-text">
-                        <ol>
-                            <li>I like to play Tennis 🎾</li>
-                        </ol>
-                    </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <div class="card-body">
-                    <h5 class="card-title">About Haseeb</h5>
-                    <p class="card-text">
-                        <ol>
-                            <li>I like to code 💻</li>
-                            <li>I like to play games 🎮</li>
-                            <li>I like to work out 🏋️</li>
-                        </ol>
-                    </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <div class="card-body">
-                    <h5 class="card-title">About Shaurya</h5>
-                    <p class="card-text">
-                        <ol>
-                            <li>I really like Python</li>
-                        </ol>
-                    </p>
+                    <h5 class="card-title"> 
+                        <p style= color:blue>Cross Country</p>
+                    </h5>
+                    <p class="card-text" style= color:darkcyan>I have been running since I was 5 years old. Now I am currently on the Del Norte Cross Country Team and have been running on the team since my freshman year. The Boys Cross Country Teams hopes to make it to States this year and will have to work hard in order to reach this goal.</p>
+                    <img src="{{ url_for('static', filename='assets/danaMeet.JPG') }}" alt="Dana Hills Junior Boys Start" width="550" height="300">
+                    <img src="{{ url_for('static', filename='assets/IMG-1650.jpg') }}" alt="Dana Hills Junior Boys Start" width="500" height="300">
                     </div>
                 </div>
             </div>
             
         </div>
-    </div>
+        <br>
+        <div class="column">
+            <div class="column">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title"> 
+                        <p style= color:blue>Food</p>
+                    </h5>
+                    <p class="card-text" style= color:darkcyan>Food is something that I always loved to explore. From the different cuisines to different meals, I always like to try something new. I have taken a particular liking to asian food, but I am also open to trying foods of other cultures.</p>
+                    <figure>
+                        <img src="{{ url_for('static', filename='assets/xlb.jfif') }}" alt="Paradise Dynasty XLBs">
+                        <figcaption>Paradise Dynasty 8 Flavors Xiao Long Bao</figcaption>
+                        <img src="{{ url_for('static', filename='assets/IMG_3632.heic') }}" alt="Marufuku Ramen" width="500" height="300">
+                        <figcaption>Marufuku Ramen</figcaption>
+                      </figure>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div> 
 {% endblock %}
+
+<!- This is turning off birds background from base.html -->
