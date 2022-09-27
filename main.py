@@ -18,17 +18,13 @@ def index():
     return render_template("index.html")
 
 @app.route('/about/')  # connects /stub/ URL to stub() function
-<<<<<<< HEAD
-def stub():
+def about():
     return render_template("about-me.html")
 
 @app.route('/scrum/')  # connects /stub/ URL to stub() function
-def stub():
+def scrum():
     return render_template("scrum.html")
-=======
-def about():
-    return render_template("about-me.html")
->>>>>>> 04cc8a24b06765e71706e8f566ac1f02d4b76957
+
 
 # this runs the application on the development server
 if __name__ == "__main__":
